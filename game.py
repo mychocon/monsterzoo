@@ -414,7 +414,7 @@ class GameNamespace(BaseNamespace, RoomsMixin, BroadcastMixin, PlayerMixin):
         self.log('Username: {0}'.format(username))
         
         # 20130906:LyV: Added this line to initialize the object.
-        self.initialize(username)
+        self.initialize(self,username)
         
         # 20130906:LyV: For now, comment out the session attribute, since
         # this object has not associated with a session yet.
